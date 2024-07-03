@@ -14,6 +14,8 @@
 		EB2590152C3483CA002EF1BD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590142C3483CA002EF1BD /* MainTabView.swift */; };
 		EB2590172C349168002EF1BD /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590162C349167002EF1BD /* FeedView.swift */; };
 		EB2590192C349B80002EF1BD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590182C349B80002EF1BD /* FeedCell.swift */; };
+		EB25901B2C35C9A7002EF1BD /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25901A2C35C9A7002EF1BD /* ExploreView.swift */; };
+		EB25901D2C35C9B3002EF1BD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25901C2C35C9B3002EF1BD /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		EB2590142C3483CA002EF1BD /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		EB2590162C349167002EF1BD /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		EB2590182C349B80002EF1BD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EB25901A2C35C9A7002EF1BD /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		EB25901C2C35C9B3002EF1BD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,8 @@
 		EB25900C2C347E2E002EF1BD /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				EB25901A2C35C9A7002EF1BD /* ExploreView.swift */,
+				EB25901C2C35C9B3002EF1BD /* UserCell.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -278,7 +284,9 @@
 				EB2590192C349B80002EF1BD /* FeedCell.swift in Sources */,
 				EB258FF92C347D8B002EF1BD /* ContentView.swift in Sources */,
 				EB258FF72C347D8B002EF1BD /* TikTokCloneApp.swift in Sources */,
+				EB25901B2C35C9A7002EF1BD /* ExploreView.swift in Sources */,
 				EB2590152C3483CA002EF1BD /* MainTabView.swift in Sources */,
+				EB25901D2C35C9B3002EF1BD /* UserCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
