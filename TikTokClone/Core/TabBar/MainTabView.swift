@@ -42,7 +42,7 @@ struct MainTabView: View {
                 }
                 
             
-            Text("Notifications")
+            NotificationsView()
                 .tabItem {
                     VStack {
                         Image(systemName: selectedTab == 3 ? "heart.fill" : "heart")

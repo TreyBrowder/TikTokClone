@@ -16,6 +16,8 @@
 		EB2590192C349B80002EF1BD /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590182C349B80002EF1BD /* FeedCell.swift */; };
 		EB25901B2C35C9A7002EF1BD /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25901A2C35C9A7002EF1BD /* ExploreView.swift */; };
 		EB25901D2C35C9B3002EF1BD /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25901C2C35C9B3002EF1BD /* UserCell.swift */; };
+		EB25901F2C35D488002EF1BD /* NotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25901E2C35D488002EF1BD /* NotificationsView.swift */; };
+		EB2590212C35D490002EF1BD /* NotificationsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590202C35D490002EF1BD /* NotificationsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		EB2590182C349B80002EF1BD /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		EB25901A2C35C9A7002EF1BD /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		EB25901C2C35C9B3002EF1BD /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		EB25901E2C35D488002EF1BD /* NotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsView.swift; sourceTree = "<group>"; };
+		EB2590202C35D490002EF1BD /* NotificationsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 		EB25900F2C347E34002EF1BD /* Notifications */ = {
 			isa = PBXGroup;
 			children = (
+				EB25901E2C35D488002EF1BD /* NotificationsView.swift */,
+				EB2590202C35D490002EF1BD /* NotificationsCell.swift */,
 			);
 			path = Notifications;
 			sourceTree = "<group>";
@@ -287,6 +293,8 @@
 				EB25901B2C35C9A7002EF1BD /* ExploreView.swift in Sources */,
 				EB2590152C3483CA002EF1BD /* MainTabView.swift in Sources */,
 				EB25901D2C35C9B3002EF1BD /* UserCell.swift in Sources */,
+				EB2590212C35D490002EF1BD /* NotificationsCell.swift in Sources */,
+				EB25901F2C35D488002EF1BD /* NotificationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
