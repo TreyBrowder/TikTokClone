@@ -103,6 +103,18 @@ struct FeedCell: View {
             }
             .padding()
         }
+        .onTapGesture {
+            switch myPlayer.timeControlStatus {
+            case .paused:
+                myPlayer.play()
+            case .waitingToPlayAtSpecifiedRate:
+                break
+            case .playing:
+                myPlayer.pause()
+            @unknown default:
+                break
+            }
+        }
     }
 }
 
