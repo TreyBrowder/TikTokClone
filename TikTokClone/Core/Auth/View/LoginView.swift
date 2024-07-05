@@ -57,6 +57,8 @@ struct LoginView: View {
                         .clipShape(RoundedRectangle(cornerRadius: 10))
                 }
                 .padding(.vertical)
+                .disabled(!formIsValid)
+                .opacity(formIsValid ? 1 : 0.6)
                 
                 Spacer()
                 
@@ -75,9 +77,17 @@ struct LoginView: View {
                     .font(.footnote)
                     .padding(.vertical)
                 }
-                
             }
         }
+    }
+}
+
+//MARK: - AUTH FORM PROTOCOL
+extension LoginView: AuthFormProtocol {
+    var formIsValid: Bool {
+        return !emailText.isEmpty
+        && emailText.contains("@")
+        && !password.isEmpty
     }
 }
 
