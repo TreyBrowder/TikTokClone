@@ -18,7 +18,12 @@ class AuthService {
                     password: String,
                     userName: String,
                     fullName: String) async throws {
-        print("DEBUG - LOG: AuthService Class - createUser method called")
+        do {
+            let result = try await Auth.auth().createUser(withEmail: email, password: password)
+        } catch {
+            print("DEBUG - ERROR: Auth Service Class - createUser Method - Could NOT create user")
+            print("DEBUG - ERROR: \(error.localizedDescription)")
+        }
     }
     
     func signOut() {
