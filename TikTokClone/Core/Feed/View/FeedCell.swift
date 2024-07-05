@@ -6,19 +6,20 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct FeedCell: View {
-    let post: Int
+    let post: Post
+    var myPlayer: AVPlayer
     
+    init(post: Post, player: AVPlayer) {
+        self.post = post
+        self.myPlayer = player
+    }
     var body: some View {
         ZStack {
-            Rectangle()
-                .fill(.cyan)
+            MyVideoPlayer(player: myPlayer)
                 .containerRelativeFrame([.horizontal, .vertical])
-                .overlay {
-                    Text("Post \(post)")
-                        .foregroundStyle(.white)
-                }
             
             VStack {
                 Spacer()
@@ -106,5 +107,7 @@ struct FeedCell: View {
 }
 
 #Preview {
-    FeedCell(post: 2)
+    FeedCell(post: Post(id: NSUUID().uuidString, 
+                        videoUrl: "https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"),
+                        player: AVPlayer())
 }

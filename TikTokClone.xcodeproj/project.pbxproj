@@ -22,6 +22,9 @@
 		EB2590252C35DC64002EF1BD /* ProfileheaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590242C35DC64002EF1BD /* ProfileheaderView.swift */; };
 		EB2590272C35DC71002EF1BD /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590262C35DC71002EF1BD /* PostGridView.swift */; };
 		EB25902D2C35E615002EF1BD /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25902C2C35E615002EF1BD /* UserStatView.swift */; };
+		EB25902F2C383C2F002EF1BD /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25902E2C383C2F002EF1BD /* Post.swift */; };
+		EB2590362C384722002EF1BD /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590352C384722002EF1BD /* FeedViewModel.swift */; };
+		EB2590382C384BFA002EF1BD /* MyVideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590372C384BFA002EF1BD /* MyVideoPlayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 		EB2590242C35DC64002EF1BD /* ProfileheaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileheaderView.swift; sourceTree = "<group>"; };
 		EB2590262C35DC71002EF1BD /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
 		EB25902C2C35E615002EF1BD /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
+		EB25902E2C383C2F002EF1BD /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		EB2590352C384722002EF1BD /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		EB2590372C384BFA002EF1BD /* MyVideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVideoPlayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 		EB2590072C347DCC002EF1BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EB25902E2C383C2F002EF1BD /* Post.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,8 +206,9 @@
 		EB2590102C347E35002EF1BD /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				EB2590162C349167002EF1BD /* FeedView.swift */,
-				EB2590182C349B80002EF1BD /* FeedCell.swift */,
+				EB2590302C383C53002EF1BD /* Service */,
+				EB2590332C383C99002EF1BD /* View */,
+				EB2590342C383CAA002EF1BD /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -208,6 +216,7 @@
 		EB2590112C347E37002EF1BD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				EB2590372C384BFA002EF1BD /* MyVideoPlayer.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -242,6 +251,30 @@
 				EB2590222C35DA42002EF1BD /* CurrentUserProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EB2590302C383C53002EF1BD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EB2590332C383C99002EF1BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB2590162C349167002EF1BD /* FeedView.swift */,
+				EB2590182C349B80002EF1BD /* FeedCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2590342C383CAA002EF1BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB2590352C384722002EF1BD /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -314,11 +347,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2590382C384BFA002EF1BD /* MyVideoPlayer.swift in Sources */,
 				EB2590172C349168002EF1BD /* FeedView.swift in Sources */,
 				EB2590192C349B80002EF1BD /* FeedCell.swift in Sources */,
 				EB258FF92C347D8B002EF1BD /* ContentView.swift in Sources */,
 				EB25902D2C35E615002EF1BD /* UserStatView.swift in Sources */,
 				EB2590252C35DC64002EF1BD /* ProfileheaderView.swift in Sources */,
+				EB2590362C384722002EF1BD /* FeedViewModel.swift in Sources */,
+				EB25902F2C383C2F002EF1BD /* Post.swift in Sources */,
 				EB258FF72C347D8B002EF1BD /* TikTokCloneApp.swift in Sources */,
 				EB25901B2C35C9A7002EF1BD /* ExploreView.swift in Sources */,
 				EB2590152C3483CA002EF1BD /* MainTabView.swift in Sources */,
