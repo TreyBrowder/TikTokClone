@@ -37,12 +37,18 @@ class AuthService {
                     userName: String,
                     fullName: String) async throws {
         do {
+            //create a user in the backend
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
             print("DEBUG - LOG: Auth Service class CreateUser Method")
             print("DEBUG - LOG: Successfully created user: \(result.user.uid)")
+            
+            //upload new user into the database
+            print("DEBUG - LOG: adding user to Database...")
+            try await uploadUserData(withEmail: email, id: result.user.uid, userName: userName, fullName: fullName)
+            print("DEBUG - LOG: Successfully added user to the Database!")
         } catch {
-            print("DEBUG - ERROR: Auth Service Class - createUser Method - Could NOT create user")
+            print("DEBUG - ERROR: Auth Service Class - createUser Method - Could NOT create user or could not add to Database")
             print("DEBUG - ERROR: \(error.localizedDescription)")
             throw error
         }
@@ -57,5 +63,14 @@ class AuthService {
         //update routing logic by wiping the user session
         self.userSession = nil
         
+    }
+    
+    private func uploadUserData(withEmail email: String,
+                                id: String,
+                                userName: String,
+                                fullName: String) async throws {
+        
+        let user = User(id: id, username: userName, email: email, fullname: fullName)
+        try await UserService().uploadUserData(user)
     }
 }
