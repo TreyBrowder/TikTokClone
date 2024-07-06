@@ -13,7 +13,16 @@ struct RegisterView: View {
     @State private var fullNameText = ""
     @State private var userNameText = ""
     @Environment(\.dismiss) var dismiss
-    @StateObject private var registerVM = RegisterViewModel(authServices: AuthService())
+    
+    @StateObject private var registerVM: RegisterViewModel
+    
+    private let authService: AuthService
+    
+    init(authService: AuthService){
+        self.authService = authService
+        
+        self._registerVM = StateObject(wrappedValue: RegisterViewModel(authServices: authService))
+    }
     
     var body: some View {
         VStack {
@@ -98,5 +107,5 @@ extension RegisterView: AuthFormProtocol {
 }
 
 #Preview {
-    RegisterView()
+    RegisterView(authService: AuthService())
 }

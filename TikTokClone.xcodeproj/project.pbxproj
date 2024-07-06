@@ -43,6 +43,7 @@
 		EB2590672C38A5FC002EF1BD /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB2590662C38A5FC002EF1BD /* FirebaseDatabaseSwift */; };
 		EB2590692C38A613002EF1BD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = EB2590682C38A613002EF1BD /* FirebaseAnalytics */; };
 		EB25906B2C38A63A002EF1BD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = EB25906A2C38A63A002EF1BD /* FirebaseStorage */; };
+		EB25906D2C39A06F002EF1BD /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25906C2C39A06F002EF1BD /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		EB2590582C389765002EF1BD /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		EB25905A2C38982E002EF1BD /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EB25905C2C389EAB002EF1BD /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		EB25906C2C39A06F002EF1BD /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				EB258FF82C347D8B002EF1BD /* ContentView.swift */,
+				EB25906C2C39A06F002EF1BD /* ContentViewModel.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				EB258FF92C347D8B002EF1BD /* ContentView.swift in Sources */,
 				EB25902D2C35E615002EF1BD /* UserStatView.swift in Sources */,
 				EB2590592C389765002EF1BD /* AuthService.swift in Sources */,
+				EB25906D2C39A06F002EF1BD /* ContentViewModel.swift in Sources */,
 				EB2590432C3879B0002EF1BD /* StandardTextFieldModifier.swift in Sources */,
 				EB2590252C35DC64002EF1BD /* ProfileheaderView.swift in Sources */,
 				EB2590362C384722002EF1BD /* FeedViewModel.swift in Sources */,
