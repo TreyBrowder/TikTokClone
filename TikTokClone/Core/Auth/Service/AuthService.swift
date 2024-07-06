@@ -9,6 +9,7 @@ import Foundation
 import Firebase
 import FirebaseAuth
 
+@MainActor
 class AuthService {
     
     @Published var userSession: FirebaseAuth.User?
