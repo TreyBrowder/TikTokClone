@@ -47,6 +47,9 @@
 		EB25906F2C39B3D1002EF1BD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25906E2C39B3D1002EF1BD /* User.swift */; };
 		EB2590712C39B548002EF1BD /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590702C39B548002EF1BD /* UserService.swift */; };
 		EB2590732C39B5A1002EF1BD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EB2590722C39B5A1002EF1BD /* FirebaseFirestoreSwift */; };
+		EB2590772C39C5E4002EF1BD /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590762C39C5E4002EF1BD /* ExploreViewModel.swift */; };
+		EB2590792C39CD3B002EF1BD /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590782C39CD3B002EF1BD /* PreviewProvider.swift */; };
+		EB25907B2C39D67D002EF1BD /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25907A2C39D67D002EF1BD /* MockUserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +83,9 @@
 		EB25906C2C39A06F002EF1BD /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		EB25906E2C39B3D1002EF1BD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EB2590702C39B548002EF1BD /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		EB2590762C39C5E4002EF1BD /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		EB2590782C39CD3B002EF1BD /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		EB25907A2C39D67D002EF1BD /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,7 @@
 		EB2590062C347DBA002EF1BD /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				EB2590782C39CD3B002EF1BD /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2590702C39B548002EF1BD /* UserService.swift */,
+				EB25907A2C39D67D002EF1BD /* MockUserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -220,8 +228,8 @@
 		EB25900C2C347E2E002EF1BD /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				EB25901A2C35C9A7002EF1BD /* ExploreView.swift */,
-				EB25901C2C35C9B3002EF1BD /* UserCell.swift */,
+				EB2590752C39C5D2002EF1BD /* ViewModel */,
+				EB2590742C39C59D002EF1BD /* View */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -380,6 +388,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		EB2590742C39C59D002EF1BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB25901A2C35C9A7002EF1BD /* ExploreView.swift */,
+				EB25901C2C35C9B3002EF1BD /* UserCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2590752C39C5D2002EF1BD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EB2590762C39C5E4002EF1BD /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -472,6 +497,7 @@
 				EB25905B2C38982E002EF1BD /* LoginViewModel.swift in Sources */,
 				EB25906F2C39B3D1002EF1BD /* User.swift in Sources */,
 				EB2590172C349168002EF1BD /* FeedView.swift in Sources */,
+				EB2590792C39CD3B002EF1BD /* PreviewProvider.swift in Sources */,
 				EB2590192C349B80002EF1BD /* FeedCell.swift in Sources */,
 				EB2590712C39B548002EF1BD /* UserService.swift in Sources */,
 				EB258FF92C347D8B002EF1BD /* ContentView.swift in Sources */,
@@ -487,10 +513,12 @@
 				EB25901B2C35C9A7002EF1BD /* ExploreView.swift in Sources */,
 				EB25903F2C387300002EF1BD /* LoginView.swift in Sources */,
 				EB2590152C3483CA002EF1BD /* MainTabView.swift in Sources */,
+				EB25907B2C39D67D002EF1BD /* MockUserService.swift in Sources */,
 				EB25901D2C35C9B3002EF1BD /* UserCell.swift in Sources */,
 				EB2590272C35DC71002EF1BD /* PostGridView.swift in Sources */,
 				EB2590232C35DA42002EF1BD /* CurrentUserProfileView.swift in Sources */,
 				EB2590212C35D490002EF1BD /* NotificationsCell.swift in Sources */,
+				EB2590772C39C5E4002EF1BD /* ExploreViewModel.swift in Sources */,
 				EB25901F2C35D488002EF1BD /* NotificationsView.swift in Sources */,
 				EB25905D2C389EAB002EF1BD /* RegisterViewModel.swift in Sources */,
 			);
