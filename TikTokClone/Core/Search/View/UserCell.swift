@@ -11,9 +11,9 @@ struct UserCell: View {
     
     let user: User
     
-    init(user: User) {
-        self.user = user
-    }
+//    init(user: User) {
+//        self.user = user
+//    }
     
     var body: some View {
         HStack(spacing: 12) {
@@ -31,6 +31,7 @@ struct UserCell: View {
                 Text(user.fullname)
                     .font(.subheadline)
             }
+            .foregroundStyle(.black)
             
             Spacer()
         }

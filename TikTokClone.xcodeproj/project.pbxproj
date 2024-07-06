@@ -50,6 +50,7 @@
 		EB2590772C39C5E4002EF1BD /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590762C39C5E4002EF1BD /* ExploreViewModel.swift */; };
 		EB2590792C39CD3B002EF1BD /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590782C39CD3B002EF1BD /* PreviewProvider.swift */; };
 		EB25907B2C39D67D002EF1BD /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25907A2C39D67D002EF1BD /* MockUserService.swift */; };
+		EB25907D2C39E9BA002EF1BD /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25907C2C39E9BA002EF1BD /* UserProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,7 @@
 		EB2590762C39C5E4002EF1BD /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		EB2590782C39CD3B002EF1BD /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		EB25907A2C39D67D002EF1BD /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
+		EB25907C2C39E9BA002EF1BD /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2590222C35DA42002EF1BD /* CurrentUserProfileView.swift */,
+				EB25907C2C39E9BA002EF1BD /* UserProfileView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -517,6 +520,7 @@
 				EB25901D2C35C9B3002EF1BD /* UserCell.swift in Sources */,
 				EB2590272C35DC71002EF1BD /* PostGridView.swift in Sources */,
 				EB2590232C35DA42002EF1BD /* CurrentUserProfileView.swift in Sources */,
+				EB25907D2C39E9BA002EF1BD /* UserProfileView.swift in Sources */,
 				EB2590212C35D490002EF1BD /* NotificationsCell.swift in Sources */,
 				EB2590772C39C5E4002EF1BD /* ExploreViewModel.swift in Sources */,
 				EB25901F2C35D488002EF1BD /* NotificationsView.swift in Sources */,

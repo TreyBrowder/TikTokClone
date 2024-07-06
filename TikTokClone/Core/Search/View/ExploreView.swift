@@ -15,13 +15,18 @@ struct ExploreView: View {
             ScrollView {
                 LazyVStack(spacing: 16) {
                     ForEach(exploreVM.usersArray) { user in
-                        UserCell(user: user)
-                            .padding(.horizontal)
+                        NavigationLink(value: user) {
+                            UserCell(user: user)
+                                .padding(.horizontal)
+                        }
                     }
                 }
             }
             .navigationTitle("Explore")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: User.self) { user in
+                UserProfileView(user: user)
+            }
         }
     }
 }
