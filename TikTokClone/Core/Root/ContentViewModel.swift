@@ -14,12 +14,15 @@ class ContentViewModel: ObservableObject {
     
     ///Keep track of whether or not a user is logged in
     @Published var userSession: FirebaseAuth.User?
+    @Published var currentUser: User?
     
     private let authService: AuthService
+    private let userService: UserService
     private var cancellables = Set<AnyCancellable>()
     
-    init(authService: AuthService){
+    init(authService: AuthService, userService: UserService){
         self.authService = authService
+        self.userService = userService
         setUpSubscribers()
         authService.updateUserSession()
     }
@@ -27,6 +30,12 @@ class ContentViewModel: ObservableObject {
     private func setUpSubscribers() {
         authService.$userSession.sink { [weak self] user in
             self?.userSession = user
+            self?.getCurrentUser()
         }.store(in: &cancellables)
+    }
+    
+    func getCurrentUser() {
+        guard userSession != nil else { return }
+        Task { self.currentUser = try await userService.fetchCurrentUser() }
     }
 }

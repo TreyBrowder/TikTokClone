@@ -25,6 +25,7 @@ struct FeedView: View {
             .scrollTargetLayout()
         }
         .onAppear { myPlayer.play() }
+        .onDisappear { myPlayer.pause() }
         .scrollPosition(id: $scrollPosition)
         .scrollTargetBehavior(.paging)
         .ignoresSafeArea()

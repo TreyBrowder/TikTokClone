@@ -51,6 +51,8 @@
 		EB2590792C39CD3B002EF1BD /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590782C39CD3B002EF1BD /* PreviewProvider.swift */; };
 		EB25907B2C39D67D002EF1BD /* MockUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25907A2C39D67D002EF1BD /* MockUserService.swift */; };
 		EB25907D2C39E9BA002EF1BD /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25907C2C39E9BA002EF1BD /* UserProfileView.swift */; };
+		EB2590802C3C2EF8002EF1BD /* Firestore+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25907F2C3C2EF8002EF1BD /* Firestore+Constants.swift */; };
+		EB2590842C3C36C9002EF1BD /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590832C3C36C9002EF1BD /* EditProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		EB2590782C39CD3B002EF1BD /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		EB25907A2C39D67D002EF1BD /* MockUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserService.swift; sourceTree = "<group>"; };
 		EB25907C2C39E9BA002EF1BD /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		EB25907F2C3C2EF8002EF1BD /* Firestore+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firestore+Constants.swift"; sourceTree = "<group>"; };
+		EB2590832C3C36C9002EF1BD /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +211,7 @@
 		EB2590092C347DE4002EF1BD /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				EB25907E2C3C2EE3002EF1BD /* Contants */,
 				EB2590422C3879B0002EF1BD /* StandardTextFieldModifier.swift */,
 			);
 			path = Utils;
@@ -248,6 +253,7 @@
 		EB25900E2C347E32002EF1BD /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EB2590812C3C36AC002EF1BD /* EditProfile */,
 				EB25902B2C35E582002EF1BD /* View */,
 				EB2590282C35E1C4002EF1BD /* Components */,
 			);
@@ -408,6 +414,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		EB25907E2C3C2EE3002EF1BD /* Contants */ = {
+			isa = PBXGroup;
+			children = (
+				EB25907F2C3C2EF8002EF1BD /* Firestore+Constants.swift */,
+			);
+			path = Contants;
+			sourceTree = "<group>";
+		};
+		EB2590812C3C36AC002EF1BD /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				EB2590822C3C36BA002EF1BD /* views */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		EB2590822C3C36BA002EF1BD /* views */ = {
+			isa = PBXGroup;
+			children = (
+				EB2590832C3C36C9002EF1BD /* EditProfileView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -497,6 +527,7 @@
 			files = (
 				EB2590382C384BFA002EF1BD /* MyVideoPlayer.swift in Sources */,
 				EB2590452C3884DA002EF1BD /* AuthFormProtocol.swift in Sources */,
+				EB2590842C3C36C9002EF1BD /* EditProfileView.swift in Sources */,
 				EB25905B2C38982E002EF1BD /* LoginViewModel.swift in Sources */,
 				EB25906F2C39B3D1002EF1BD /* User.swift in Sources */,
 				EB2590172C349168002EF1BD /* FeedView.swift in Sources */,
@@ -509,6 +540,7 @@
 				EB25906D2C39A06F002EF1BD /* ContentViewModel.swift in Sources */,
 				EB2590432C3879B0002EF1BD /* StandardTextFieldModifier.swift in Sources */,
 				EB2590252C35DC64002EF1BD /* ProfileheaderView.swift in Sources */,
+				EB2590802C3C2EF8002EF1BD /* Firestore+Constants.swift in Sources */,
 				EB2590362C384722002EF1BD /* FeedViewModel.swift in Sources */,
 				EB25902F2C383C2F002EF1BD /* Post.swift in Sources */,
 				EB258FF72C347D8B002EF1BD /* TikTokCloneApp.swift in Sources */,
