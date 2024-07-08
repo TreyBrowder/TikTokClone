@@ -9,11 +9,12 @@ import SwiftUI
 import PhotosUI
 
 struct EditProfileView: View {
-    
+    @Environment(\.dismiss) private var dismiss
     @State private var selectedPickerItem: PhotosPickerItem?
     @State private var profileImage: Image?
+    @State private var uiImage: UIImage?
     
-    @Environment(\.dismiss) private var dismiss
+    @StateObject var manager = EditProfileManager(imageUploader: ImageUploader())
     
     let user: User
     
@@ -72,7 +73,7 @@ struct EditProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") {
-                        dismiss()
+                        onDoneTapped()
                     }
                 }
                 
@@ -90,9 +91,19 @@ struct EditProfileView: View {
 private extension EditProfileView {
     func loadImage(fromItem item: PhotosPickerItem?) async {
         guard let item else { return }
+        
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
         guard let uiImage = UIImage(data: data) else { return }
+        self.uiImage = uiImage
         self.profileImage = Image(uiImage: uiImage)
+    }
+    
+    func onDoneTapped() {
+        Task {
+            guard let uiImage else { return }
+            await manager.uploadProfileImage(uiImage)
+            dismiss()
+        }
     }
 }
 

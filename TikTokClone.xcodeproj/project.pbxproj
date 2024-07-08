@@ -56,6 +56,8 @@
 		EB2590882C3C4588002EF1BD /* EditProfileOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590872C3C4588002EF1BD /* EditProfileOptions.swift */; };
 		EB25908A2C3C48EB002EF1BD /* EditProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2590892C3C48EA002EF1BD /* EditProfileOptionRowView.swift */; };
 		EB25908C2C3C4AB6002EF1BD /* EditProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB25908B2C3C4AB6002EF1BD /* EditProfileDetailView.swift */; };
+		EB9EA6DA2C3C661E0035ABC8 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EA6D92C3C661E0035ABC8 /* ImageUploader.swift */; };
+		EB9EA6DD2C3C6A980035ABC8 /* EditProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EA6DC2C3C6A980035ABC8 /* EditProfileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +100,8 @@
 		EB2590872C3C4588002EF1BD /* EditProfileOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileOptions.swift; sourceTree = "<group>"; };
 		EB2590892C3C48EA002EF1BD /* EditProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileOptionRowView.swift; sourceTree = "<group>"; };
 		EB25908B2C3C4AB6002EF1BD /* EditProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileDetailView.swift; sourceTree = "<group>"; };
+		EB9EA6D92C3C661E0035ABC8 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		EB9EA6DC2C3C6A980035ABC8 /* EditProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +230,7 @@
 		EB25900A2C347E1A002EF1BD /* UploadMedia */ = {
 			isa = PBXGroup;
 			children = (
+				EB9EA6D82C3C660A0035ABC8 /* Service */,
 			);
 			path = UploadMedia;
 			sourceTree = "<group>";
@@ -431,6 +436,7 @@
 		EB2590812C3C36AC002EF1BD /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				EB9EA6DB2C3C6A8A0035ABC8 /* Manager */,
 				EB2590852C3C4554002EF1BD /* Models */,
 				EB2590822C3C36BA002EF1BD /* views */,
 			);
@@ -453,6 +459,22 @@
 				EB2590872C3C4588002EF1BD /* EditProfileOptions.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		EB9EA6D82C3C660A0035ABC8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EA6D92C3C661E0035ABC8 /* ImageUploader.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EB9EA6DB2C3C6A8A0035ABC8 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EA6DC2C3C6A980035ABC8 /* EditProfileManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -547,6 +569,7 @@
 				EB2590882C3C4588002EF1BD /* EditProfileOptions.swift in Sources */,
 				EB2590842C3C36C9002EF1BD /* EditProfileView.swift in Sources */,
 				EB25905B2C38982E002EF1BD /* LoginViewModel.swift in Sources */,
+				EB9EA6DA2C3C661E0035ABC8 /* ImageUploader.swift in Sources */,
 				EB25906F2C39B3D1002EF1BD /* User.swift in Sources */,
 				EB2590172C349168002EF1BD /* FeedView.swift in Sources */,
 				EB2590792C39CD3B002EF1BD /* PreviewProvider.swift in Sources */,
@@ -561,6 +584,7 @@
 				EB2590802C3C2EF8002EF1BD /* Firestore+Constants.swift in Sources */,
 				EB2590362C384722002EF1BD /* FeedViewModel.swift in Sources */,
 				EB25902F2C383C2F002EF1BD /* Post.swift in Sources */,
+				EB9EA6DD2C3C6A980035ABC8 /* EditProfileManager.swift in Sources */,
 				EB258FF72C347D8B002EF1BD /* TikTokCloneApp.swift in Sources */,
 				EB25908C2C3C4AB6002EF1BD /* EditProfileDetailView.swift in Sources */,
 				EB2590412C38730E002EF1BD /* RegisterView.swift in Sources */,
