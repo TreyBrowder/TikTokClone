@@ -45,29 +45,11 @@ struct EditProfileView: View {
                         .foregroundStyle(Color(.systemGray2))
                         .fontWeight(.semibold)
                     
-                    HStack {
-                        Text("Name")
-                        
-                        Spacer()
-                        
-                        Text("Trey Browder")
-                    }
+                    EditProfileOptionRowView(option: EditProfileOptions.name, optionValue: "Trey Browder")
                     
-                    HStack {
-                        Text("User name")
-                        
-                        Spacer()
-                        
-                        Text("T_Browder7")
-                    }
+                    EditProfileOptionRowView(option: EditProfileOptions.username, optionValue: "T_Browder7")
                     
-                    HStack {
-                        Text("Bio")
-                        
-                        Spacer()
-                        
-                        Text("Add a bio")
-                    }
+                    EditProfileOptionRowView(option: EditProfileOptions.bio, optionValue: "Add a bio")
                 }
                 .font(.subheadline)
                 .padding()
@@ -77,6 +59,9 @@ struct EditProfileView: View {
             .task(id: selectedPickerItem) { await loadImage(fromItem: selectedPickerItem) }
             .navigationTitle("Edit Profile")
             .navigationBarTitleDisplayMode(.inline)
+            .navigationDestination(for: EditProfileOptions.self, destination: { option in
+                Text(option.title)
+            })
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") {
@@ -91,7 +76,6 @@ struct EditProfileView: View {
                 }
             }
             .fontWeight(.semibold)
-            .foregroundStyle(.black)
         }
     }
 }
