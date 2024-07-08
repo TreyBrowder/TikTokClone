@@ -61,6 +61,9 @@
 		EB9EA6E02C3C6EEE0035ABC8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = EB9EA6DF2C3C6EEE0035ABC8 /* Kingfisher */; };
 		EB9EA6E52C3C6F6F0035ABC8 /* AvatarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EA6E42C3C6F6F0035ABC8 /* AvatarView.swift */; };
 		EB9EA6E72C3C71330035ABC8 /* AvatarSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EA6E62C3C71330035ABC8 /* AvatarSize.swift */; };
+		EB9EA6EA2C3C76210035ABC8 /* MediaSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EA6E92C3C76210035ABC8 /* MediaSelectorView.swift */; };
+		EB9EA6EC2C3C7D420035ABC8 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EA6EB2C3C7D420035ABC8 /* UploadPostView.swift */; };
+		EB9EA6EF2C3C82390035ABC8 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB9EA6EE2C3C82390035ABC8 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -107,6 +110,9 @@
 		EB9EA6DC2C3C6A980035ABC8 /* EditProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileManager.swift; sourceTree = "<group>"; };
 		EB9EA6E42C3C6F6F0035ABC8 /* AvatarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarView.swift; sourceTree = "<group>"; };
 		EB9EA6E62C3C71330035ABC8 /* AvatarSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarSize.swift; sourceTree = "<group>"; };
+		EB9EA6E92C3C76210035ABC8 /* MediaSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaSelectorView.swift; sourceTree = "<group>"; };
+		EB9EA6EB2C3C7D420035ABC8 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		EB9EA6EE2C3C82390035ABC8 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +242,8 @@
 		EB25900A2C347E1A002EF1BD /* UploadMedia */ = {
 			isa = PBXGroup;
 			children = (
+				EB9EA6ED2C3C822E0035ABC8 /* Model */,
+				EB9EA6E82C3C76160035ABC8 /* Views */,
 				EB9EA6D82C3C660A0035ABC8 /* Service */,
 			);
 			path = UploadMedia;
@@ -509,6 +517,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EB9EA6E82C3C76160035ABC8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EA6E92C3C76210035ABC8 /* MediaSelectorView.swift */,
+				EB9EA6EB2C3C7D420035ABC8 /* UploadPostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB9EA6ED2C3C822E0035ABC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB9EA6EE2C3C82390035ABC8 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -609,10 +634,13 @@
 				EB2590792C39CD3B002EF1BD /* PreviewProvider.swift in Sources */,
 				EB2590192C349B80002EF1BD /* FeedCell.swift in Sources */,
 				EB2590712C39B548002EF1BD /* UserService.swift in Sources */,
+				EB9EA6EC2C3C7D420035ABC8 /* UploadPostView.swift in Sources */,
 				EB258FF92C347D8B002EF1BD /* ContentView.swift in Sources */,
 				EB25902D2C35E615002EF1BD /* UserStatView.swift in Sources */,
+				EB9EA6EF2C3C82390035ABC8 /* Movie.swift in Sources */,
 				EB2590592C389765002EF1BD /* AuthService.swift in Sources */,
 				EB25906D2C39A06F002EF1BD /* ContentViewModel.swift in Sources */,
+				EB9EA6EA2C3C76210035ABC8 /* MediaSelectorView.swift in Sources */,
 				EB2590432C3879B0002EF1BD /* StandardTextFieldModifier.swift in Sources */,
 				EB2590252C35DC64002EF1BD /* ProfileheaderView.swift in Sources */,
 				EB2590802C3C2EF8002EF1BD /* Firestore+Constants.swift in Sources */,
