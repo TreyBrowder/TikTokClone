@@ -15,10 +15,7 @@ struct ProfileheaderView: View {
     var body: some View {
         VStack(spacing: 16) {
             VStack(spacing: 8) {
-                Image(systemName: "person.circle.fill")
-                    .resizable()
-                    .foregroundStyle(Color(.systemGray3))
-                    .frame(width: 80, height: 80)
+                AvatarView(user: user, size: .large)
                 
                 //UserName
                 Text("@\(user.username)")
