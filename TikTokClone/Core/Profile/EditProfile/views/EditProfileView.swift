@@ -13,6 +13,10 @@ struct EditProfileView: View {
     @State private var selectedPickerItem: PhotosPickerItem?
     @State private var profileImage: Image?
     
+    @Environment(\.dismiss) private var dismiss
+    
+    let user: User
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -35,7 +39,7 @@ struct EditProfileView: View {
                         }
                         
                         Text("Change Photo")
-                            .foregroundStyle(.black)
+                            .foregroundStyle(.primary)
                     }
                 }
                 
@@ -45,11 +49,14 @@ struct EditProfileView: View {
                         .foregroundStyle(Color(.systemGray2))
                         .fontWeight(.semibold)
                     
-                    EditProfileOptionRowView(option: EditProfileOptions.name, optionValue: "Trey Browder")
+                    EditProfileOptionRowView(option: EditProfileOptions.name, 
+                                             optionValue: user.fullname)
                     
-                    EditProfileOptionRowView(option: EditProfileOptions.username, optionValue: "T_Browder7")
+                    EditProfileOptionRowView(option: EditProfileOptions.username,
+                                             optionValue: user.username)
                     
-                    EditProfileOptionRowView(option: EditProfileOptions.bio, optionValue: "Add a bio")
+                    EditProfileOptionRowView(option: EditProfileOptions.bio,
+                                             optionValue: user.bio ?? "Add a bio")
                 }
                 .font(.subheadline)
                 .padding()
@@ -59,19 +66,19 @@ struct EditProfileView: View {
             .task(id: selectedPickerItem) { await loadImage(fromItem: selectedPickerItem) }
             .navigationTitle("Edit Profile")
             .navigationBarTitleDisplayMode(.inline)
-            .navigationDestination(for: EditProfileOptions.self, destination: { option in
-                Text(option.title)
-            })
+            .navigationDestination(for: EditProfileOptions.self) { option in
+                EditProfileDetailView(user: user, option: option)
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Done") {
-                        print("DEBUG - LOG: Done editing tapped")
+                        dismiss()
                     }
                 }
                 
                 ToolbarItem(placement: .topBarLeading) {
                     Button("Cancel") {
-                        print("DEBUG - LOG: Cancel editing tapped")
+                        dismiss()
                     }
                 }
             }
@@ -80,7 +87,7 @@ struct EditProfileView: View {
     }
 }
 
-extension EditProfileView {
+private extension EditProfileView {
     func loadImage(fromItem item: PhotosPickerItem?) async {
         guard let item else { return }
         guard let data = try? await item.loadTransferable(type: Data.self) else { return }
@@ -90,5 +97,5 @@ extension EditProfileView {
 }
 
 #Preview {
-    EditProfileView()
+    EditProfileView(user: DeveloperPreview.user)
 }

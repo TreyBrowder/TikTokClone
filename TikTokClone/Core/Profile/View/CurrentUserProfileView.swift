@@ -16,10 +16,8 @@ struct CurrentUserProfileView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 2) {
-                    //profile header
                     ProfileheaderView(user: user)
                     
-                    //post Grid view
                     PostGridView()
                 }
                 .padding(.top)

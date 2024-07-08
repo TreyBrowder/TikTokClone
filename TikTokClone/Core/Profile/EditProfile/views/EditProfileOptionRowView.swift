@@ -13,9 +13,9 @@ struct EditProfileOptionRowView: View {
     let optionValue: String
     
     var body: some View {
-        NavigationLink(value: EditProfileOptions.name) {
+        NavigationLink(value: option) {
             Text(option.title)
-                .foregroundStyle(.black)
+                .foregroundStyle(.primary)
             
             Spacer()
             
