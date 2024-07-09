@@ -10,9 +10,11 @@ import AVKit
 
 
 struct FeedView: View {
+    
     @StateObject var feedVM = FeedViewModel()
     @State private var scrollPosition: String?
     @State private var myPlayer = AVPlayer()
+    
     var body: some View {
         ScrollView {
             LazyVStack(spacing: 0) {
